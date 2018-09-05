@@ -1,0 +1,192 @@
+*{
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+}
+
+body {
+	font-size: 18px;
+	font-weight: lighter;
+    background: linear-gradient(to right, #185a9d, #43cea2);
+}
+
+.col {
+	width: 50%;
+	padding: .5em;
+}
+
+.padding-t-b{
+	padding: 1em 0;
+}
+
+main h1 {
+	text-align: center;
+	padding: .5em;
+	color: #fff;
+}
+
+main form {
+	width: 60%;
+	margin: auto;
+/*	display: grid;
+	grid-template-columns: 50% 50%;*/
+
+	background: #fff;
+	display: flex;
+	flex-wrap: wrap;
+	border: 1px solid #ddd;
+	border-radius: .26em;
+	margin-bottom: .5em;
+	align-items: center;	
+}
+
+main form p {
+	width: 100%;
+	text-align: center;
+	padding: 1.5em;
+}
+
+main form input[type="number"],
+main form input[type="text"],
+main form input[type="email"],
+main form select,
+main form textarea{
+	width: 83.333333%;
+	max-width: 83.333333%;
+	min-width: 50px;
+	padding: 6px 10px;
+    background-color: #fff;
+    border: 1px solid #D1D1D1;
+    border-radius: 4px;
+    outline: 0;
+    border-bottom: 2px solid #D1D1D1;
+}
+
+main form input[type="number"]:focus,
+main form input[type="text"]:focus,
+main form input[type="email"]:focus,
+main form select:focus,
+main form textarea:focus {
+   	border: 1px solid #246eb9;
+   	border-bottom: 2px solid #246eb9;
+}
+
+main form div:nth-child(even) {
+	text-align: right;
+}
+
+main form .checkbox label{
+	display: block;
+	padding: .5em 0;
+}
+
+main form .checkbox input{
+    margin-right: .3em;
+    display: inline-block;
+}
+
+main form textarea {
+	min-height: 5em;
+	max-height: 6.25em;
+	min-width: 83.3333%
+}
+
+main form .col.button {
+	margin: auto;
+	/*width: 100%;*/
+	text-align: center;
+}
+
+main form .btn {
+	display: inline-block;
+    background-color: #59ace0;
+    outline: 0;
+    border-radius: 4px;
+    color: white;
+    font-size: 1em;
+    height: 40px;
+    width: 96px;
+    margin: 10px;
+    border: 0px solid;
+}
+
+/* --- MEDIA QUERIES --- */
+@media screen and (max-width: 875px) {
+	main form {
+		width: 80%;
+	}
+}
+
+@media screen and (max-width: 760px){
+	body {
+		background: #000;
+	}
+
+	main form {
+		width: 90%;
+	}
+
+	main form .col-left {
+		width: 45%;
+	}
+
+	main form input[type="number"], 
+	main form input[type="text"], 
+	main form input[type="email"], 
+	main form select, 
+	main form textarea {
+    width: 93.333333%;
+    max-width: 93.333333%;
+}
+
+@media screen and (max-width: 560px) {
+
+	body {
+		background-color: #ddd;
+	}
+
+	.col {
+		width: 100%;
+		/*max-width: 95;*/
+		padding: .1em;
+		align-self: center;
+	}
+	
+	main form {
+		width: 90%;
+		flex-direction: column;
+	}
+	
+	main form .col-left {
+		width: 100%;
+		padding-left: 4.5%;
+		padding-bottom: 2.5%;
+	}
+
+	main form div:nth-child(2n) {
+	    text-align: left;
+	}
+
+	main form .col.col-left:nth-child(5n) + .col,
+	main form .col.col-left:nth-child(5n) + .col + .col-left + .col{
+		padding-left: 9%;
+		padding-bottom: .25em;
+	}
+
+	main form input[type="number"],
+	main form input[type="text"],
+	main form input[type="email"],
+	main form select {
+		width: 95%;
+		max-width: 95%;
+		margin: 0 auto;
+		display: block;
+	}
+
+	main form textarea {
+		min-width: 90%;
+	    margin: 0 auto;
+	    display: block;
+	}
+
+}
