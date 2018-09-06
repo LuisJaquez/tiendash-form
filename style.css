@@ -190,3 +190,9 @@ main form .btn {
 	}
 
 }
+
+.error {
+	width: 100%!important;
+
+	text-align: center;
+}

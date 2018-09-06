@@ -10,7 +10,6 @@
 	<main>
 		<h1 id="title">Tiendash - Formulario</h1>
 				<form action="https://formspree.io/carllewiscastillo@gmail.com" method="post">
-		
 				<p id="description">Datos Necesarios</p>
 		
 				<div class="col col-left">			
@@ -32,6 +31,20 @@
 				</div>
 				<div class="col">
 					<input type="number" name="_edad" min="15" max="60" id="edad" required placeholder="Edad">
+				</div>
+
+				<div class="col col-left">
+					<label for="nacionalidad">Nacionalidad</label>
+				</div>
+				<div class="col">
+					<input type="text" id="nacionalidad" name="_nacionalidad" required placeholder="Email">
+				</div>
+
+				<div class="col col-left">
+					<label for="horasdisponibles">Horas disponibles para el proyecto</label>
+				</div>
+				<div class="col">
+					<input type="number" id="horasdisponibles" name="_horasdisponibles" required placeholder="Horas disponibles">
 				</div>
 
 				<div class="col col-left">
@@ -69,7 +82,10 @@
 					<label for="texto">Hablanos de tí</label>
 				</div>
 				<div class="col">
-					<textarea name="texto" id="texto"></textarea>
+					<textarea name="texto" id="texto" minlength="20" placeholder="Escribe algo"></textarea>
+				</div>
+
+				<div class="error" id="error">
 				</div>
 
 				<div class="col button">
@@ -78,5 +94,6 @@
 		</form>
 	</main>
 
+	<script src="app.js"></script>
 </body>
 </html>
